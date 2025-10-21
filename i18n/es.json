@@ -28,5 +28,14 @@
   "section-seed-title": "DEJA TU SEMILLA",
   "section-seed-text": "Este memorial también está hecho de lo que aún no se ha contado. Si tienes una historia por compartir, si conociste a una víctima, si viviste de cerca el dolor del silencio, este espacio está abierto para ti. Aquí también puedes unirte como voluntario o colaborador, y ser parte de quienes cuidan y hacen posible esta memoria.",
   "btn-explore": "Explorar",
-  "language-selector-label": "Seleccionar idioma"
+  "language-selector-label": "Seleccionar idioma",
+  "uls-search-placeholder": "Buscar idioma",
+  "uls-common-languages": "Idiomas comunes",
+  "uls-region-WW": "Mundial",
+  "uls-region-AM": "América",
+  "uls-region-EU": "Europa",
+  "uls-region-ME": "Medio Oriente",
+  "uls-region-AF": "África",
+  "uls-region-AS": "Asia",
+  "uls-region-PA": "Pacífico"
 }

@@ -978,3 +978,164 @@ p{
 .uls-language-list::-webkit-scrollbar-thumb:hover {
   background: #a2a9b1 !important;
 }
+
+/* Mobile-responsive ULS styles */
+@media (max-width: 768px) {
+  /* Make language selector button more compact on mobile */
+  .language-selector .btn {
+    padding: 0.25rem 0.5rem !important;
+    font-size: 0.75rem !important;
+  }
+  
+  .language-selector .btn i {
+    font-size: 0.875rem !important;
+  }
+  
+  /* Full-width ULS menu on mobile */
+  .uls-menu {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-width: auto !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    z-index: 10000 !important;
+  }
+  
+  /* Search area styling for mobile */
+  .uls-search {
+    padding: 12px 16px !important;
+    border-bottom: 2px solid #c8ccd1 !important;
+  }
+  
+  .uls-search-wrapper {
+    padding-left: 40px !important;
+  }
+  
+  .uls-search-label {
+    width: 40px !important;
+    height: 40px !important;
+    background-size: 20px !important;
+  }
+  
+  .uls-filterinput {
+    font-size: 16px !important;
+    padding: 10px 30px 10px 0 !important;
+    height: 40px !important;
+  }
+  
+  .uls-languagefilter-clear {
+    width: 30px !important;
+    height: 40px !important;
+    background-size: 16px !important;
+  }
+  
+  /* Language list for mobile */
+  .uls-language-list {
+    max-height: calc(100vh - 80px) !important;
+    padding: 12px 0 !important;
+  }
+  
+  .uls-language-list li {
+    padding: 12px 16px !important;
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    border-bottom: 1px solid #eaecf0 !important;
+  }
+  
+  .uls-language-list li:last-child {
+    border-bottom: none !important;
+  }
+  
+  /* Region headers for mobile */
+  .uls-language-list h3 {
+    font-size: 13px !important;
+    padding: 12px 16px 6px !important;
+    margin: 12px 0 0 !important;
+    background-color: #f8f9fa !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 10 !important;
+  }
+  
+  .uls-language-list h3:first-child {
+    margin-top: 0 !important;
+  }
+  
+  /* Disable column layout on mobile */
+  .uls-menu.uls-wide .uls-language-list,
+  .uls-menu.uls-medium .uls-language-list {
+    column-count: 1 !important;
+  }
+  
+  /* Add close button area for mobile */
+  .uls-menu::before {
+    content: '✕' !important;
+    position: absolute !important;
+    top: 12px !important;
+    right: 12px !important;
+    width: 32px !important;
+    height: 32px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 20px !important;
+    color: #54595d !important;
+    cursor: pointer !important;
+    z-index: 100 !important;
+    background-color: transparent !important;
+    border-radius: 4px !important;
+    transition: background-color 0.2s !important;
+  }
+  
+  .uls-menu::before:hover {
+    background-color: #eaecf0 !important;
+  }
+  
+  /* Larger touch targets for mobile */
+  .uls-language-list li {
+    min-height: 48px !important;
+  }
+  
+  /* Improve scrollbar for touch devices */
+  .uls-language-list::-webkit-scrollbar {
+    width: 4px !important;
+  }
+}
+
+/* Tablet-specific adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .uls-menu {
+    min-width: 400px !important;
+    max-width: 600px !important;
+  }
+  
+  .uls-menu.uls-wide .uls-language-list {
+    column-count: 2 !important;
+  }
+}
+
+/* Landscape mobile adjustments */
+@media (max-width: 768px) and (orientation: landscape) {
+  .uls-language-list {
+    max-height: calc(100vh - 60px) !important;
+  }
+  
+  .uls-search {
+    padding: 8px 16px !important;
+  }
+  
+  .uls-language-list li {
+    padding: 8px 16px !important;
+    min-height: 40px !important;
+  }
+  
+  .uls-language-list h3 {
+    padding: 8px 16px 4px !important;
+  }
+}

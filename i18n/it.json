@@ -30,5 +30,14 @@
   "section-seed-title": "DEJA TU SEMILLA",
   "section-seed-text": "Comparte tu historia.",
   "btn-explore": "Esplorare",
-  "language-selector-label": "Seleziona lingua"
+  "language-selector-label": "Seleziona lingua",
+  "uls-search-placeholder": "Cerca lingua",
+  "uls-common-languages": "Lingue comuni",
+  "uls-region-WW": "Mondiale",
+  "uls-region-AM": "Americhe",
+  "uls-region-EU": "Europa",
+  "uls-region-ME": "Medio Oriente",
+  "uls-region-AF": "Africa",
+  "uls-region-AS": "Asia",
+  "uls-region-PA": "Pacifico"
 }

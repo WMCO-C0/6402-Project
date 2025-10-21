@@ -30,5 +30,14 @@
   "section-seed-title": "HINTERLASSEN SIE IHREN SAMEN",
   "section-seed-text": "Dieses Denkmal besteht auch aus dem, was noch nicht erzählt wurde. Wenn Sie eine Geschichte zu teilen haben, wenn Sie ein Opfer kannten, wenn Sie den Schmerz des Schweigens aus nächster Nähe erlebt haben, steht Ihnen dieser Raum offen. Hier können Sie sich auch als Freiwilliger oder Mitarbeiter anschließen und Teil derer sein, die sich um dieses Gedächtnis kümmern und es möglich machen.",
   "btn-explore": "Erkunden",
-  "language-selector-label": "Sprache auswählen"
+  "language-selector-label": "Sprache auswählen",
+  "uls-search-placeholder": "Sprache suchen",
+  "uls-common-languages": "Häufige Sprachen",
+  "uls-region-WW": "Weltweit",
+  "uls-region-AM": "Amerika",
+  "uls-region-EU": "Europa",
+  "uls-region-ME": "Naher Osten",
+  "uls-region-AF": "Afrika",
+  "uls-region-AS": "Asien",
+  "uls-region-PA": "Pazifik"
 }

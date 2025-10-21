@@ -30,5 +30,14 @@
   "section-seed-title": "DEJA TU SEMILLA",
   "section-seed-text": "Comparte tu historia.",
   "btn-explore": "探索",
-  "language-selector-label": "言語を選択"
+  "language-selector-label": "言語を選択",
+  "uls-search-placeholder": "言語を検索",
+  "uls-common-languages": "一般的な言語",
+  "uls-region-WW": "世界",
+  "uls-region-AM": "アメリカ大陸",
+  "uls-region-EU": "ヨーロッパ",
+  "uls-region-ME": "中東",
+  "uls-region-AF": "アフリカ",
+  "uls-region-AS": "アジア",
+  "uls-region-PA": "太平洋"
 }

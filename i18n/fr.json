@@ -30,5 +30,14 @@
   "section-seed-title": "LAISSEZ VOTRE GRAINE",
   "section-seed-text": "Ce mémorial est également fait de ce qui n'a pas encore été raconté. Si vous avez une histoire à partager, si vous avez connu une victime, si vous avez vécu de près la douleur du silence, cet espace est ouvert pour vous. Ici, vous pouvez également vous joindre en tant que bénévole ou collaborateur, et faire partie de ceux qui prennent soin de cette mémoire et la rendent possible.",
   "btn-explore": "Explorer",
-  "language-selector-label": "Sélectionner la langue"
+  "language-selector-label": "Sélectionner la langue",
+  "uls-search-placeholder": "Rechercher une langue",
+  "uls-common-languages": "Langues courantes",
+  "uls-region-WW": "Mondial",
+  "uls-region-AM": "Amériques",
+  "uls-region-EU": "Europe",
+  "uls-region-ME": "Moyen-Orient",
+  "uls-region-AF": "Afrique",
+  "uls-region-AS": "Asie",
+  "uls-region-PA": "Pacifique"
 }

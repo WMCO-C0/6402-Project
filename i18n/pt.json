@@ -1,6 +1,8 @@
 {
   "@metadata": {
-    "authors": ["6402+ Project Team"],
+    "authors": [
+      "6402+ Project Team"
+    ],
     "last-updated": "2025-10-21",
     "locale": "pt",
     "message-documentation": "qqq"
@@ -28,5 +30,14 @@
   "section-seed-title": "DEIXE SUA SEMENTE",
   "section-seed-text": "Este memorial também é feito do que ainda não foi contado. Se você tem uma história para compartilhar, se conheceu uma vítima, se viveu de perto a dor do silêncio, este espaço está aberto para você. Aqui você também pode se juntar como voluntário ou colaborador, e fazer parte daqueles que cuidam e tornam possível esta memória.",
   "btn-explore": "Explorar",
-  "language-selector-label": "Selecionar idioma"
+  "language-selector-label": "Selecionar idioma",
+  "uls-search-placeholder": "Pesquisar idioma",
+  "uls-common-languages": "Idiomas comuns",
+  "uls-region-WW": "Mundial",
+  "uls-region-AM": "Américas",
+  "uls-region-EU": "Europa",
+  "uls-region-ME": "Oriente Médio",
+  "uls-region-AF": "África",
+  "uls-region-AS": "Ásia",
+  "uls-region-PA": "Pacífico"
 }

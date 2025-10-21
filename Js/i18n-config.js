@@ -161,14 +161,64 @@
             $('.navbar .container-fluid').append($languageSelector);
         }
 
-        // Configure ULS on the language button
+        // Configure ULS on the language button with i18n
         $('#language-btn').uls({
             onSelect: function(language) {
                 updateLanguage(language);
             },
             languages: SUPPORTED_LANGUAGES,
-            quickList: ['es', 'en', 'pt', 'fr', 'de', 'ru', 'ja', 'zh', 'ar']
+            quickList: ['es', 'en', 'pt', 'fr', 'de', 'ru', 'ja', 'zh', 'ar'],
+            // ULS i18n labels
+            searchAPI: false,
+            onReady: function() {
+                // Translate ULS interface elements
+                translateULSInterface();
+            }
         });
+        
+        // Translate ULS interface after it's rendered
+        translateULSInterface();
+    }
+    
+    /**
+     * Translate ULS interface elements
+     */
+    function translateULSInterface() {
+        // Wait for ULS to render, then translate
+        setTimeout(function() {
+            // Translate search placeholder
+            $('.uls-filterinput').attr('placeholder', $.i18n('uls-search-placeholder'));
+            
+            // Translate region headers
+            $('.uls-language-list h3').each(function() {
+                const $header = $(this);
+                const regionKey = $header.attr('data-i18n-region');
+                if (regionKey && $.i18n(regionKey)) {
+                    $header.text($.i18n(regionKey));
+                } else {
+                    // Try to match text content to region key
+                    const text = $header.text().trim();
+                    const regionMap = {
+                        'uls-common-languages': 'uls-common-languages',
+                        'uls-region-WW': 'uls-region-WW',
+                        'uls-region-AM': 'uls-region-AM',
+                        'uls-region-EU': 'uls-region-EU',
+                        'uls-region-ME': 'uls-region-ME',
+                        'uls-region-AF': 'uls-region-AF',
+                        'uls-region-AS': 'uls-region-AS',
+                        'uls-region-PA': 'uls-region-PA'
+                    };
+                    
+                    // Check if header contains known region identifier
+                    Object.keys(regionMap).forEach(function(key) {
+                        if ($header.text().indexOf(key) !== -1 || $header.hasClass(key)) {
+                            $header.text($.i18n(key));
+                            $header.attr('data-i18n-region', key);
+                        }
+                    });
+                }
+            });
+        }, 100);
     }
 
     /**

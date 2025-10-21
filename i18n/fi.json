@@ -30,5 +30,14 @@
   "section-seed-title": "DEJA TU SEMILLA",
   "section-seed-text": "Comparte tu historia.",
   "btn-explore": "Tutkia",
-  "language-selector-label": "Valitse kieli"
+  "language-selector-label": "Valitse kieli",
+  "uls-search-placeholder": "Search language",
+  "uls-common-languages": "Common languages",
+  "uls-region-WW": "Worldwide",
+  "uls-region-AM": "Americas",
+  "uls-region-EU": "Europe",
+  "uls-region-ME": "Middle East",
+  "uls-region-AF": "Africa",
+  "uls-region-AS": "Asia",
+  "uls-region-PA": "Pacific"
 }

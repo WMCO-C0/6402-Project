@@ -28,5 +28,14 @@
   "section-seed-title": "LEAVE YOUR SEED",
   "section-seed-text": "This memorial is also made of what has not yet been told. If you have a story to share, if you knew a victim, if you lived closely the pain of silence, this space is open for you. Here you can also join as a volunteer or collaborator, and be part of those who care for and make this memory possible.",
   "btn-explore": "Explore",
-  "language-selector-label": "Select language"
+  "language-selector-label": "Select language",
+  "uls-search-placeholder": "Search for a language",
+  "uls-common-languages": "Common languages",
+  "uls-region-WW": "Worldwide",
+  "uls-region-AM": "Americas",
+  "uls-region-EU": "Europe",
+  "uls-region-ME": "Middle East",
+  "uls-region-AF": "Africa",
+  "uls-region-AS": "Asia",
+  "uls-region-PA": "Pacific"
 }
