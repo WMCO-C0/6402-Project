@@ -6,11 +6,33 @@
 (function() {
     'use strict';
 
-    // Language configuration
+    // Language configuration - Top 25 Wikipedia languages by readership
     const SUPPORTED_LANGUAGES = {
-        'es': 'Español',
         'en': 'English',
-        'pt': 'Português'
+        'es': 'Español',
+        'ru': 'Русский',
+        'de': 'Deutsch',
+        'fr': 'Français',
+        'ja': '日本語',
+        'it': 'Italiano',
+        'pt': 'Português',
+        'zh': '中文',
+        'pl': 'Polski',
+        'fa': 'فارسی',
+        'ar': 'العربية',
+        'nl': 'Nederlands',
+        'id': 'Bahasa Indonesia',
+        'tr': 'Türkçe',
+        'uk': 'Українська',
+        'sv': 'Svenska',
+        'cs': 'Čeština',
+        'vi': 'Tiếng Việt',
+        'ko': '한국어',
+        'fi': 'Suomi',
+        'hu': 'Magyar',
+        'he': 'עברית',
+        'no': 'Norsk',
+        'ro': 'Română'
     };
 
     const DEFAULT_LANGUAGE = 'es';
@@ -20,13 +42,15 @@
      * Initialize jQuery.i18n
      */
     function initI18n() {
+        // Build the load object dynamically for all supported languages
+        const loadObj = {};
+        Object.keys(SUPPORTED_LANGUAGES).forEach(lang => {
+            loadObj[lang] = I18N_PATH + '/' + lang + '.json';
+        });
+        
         return $.i18n({
             locale: getStoredLanguage() || DEFAULT_LANGUAGE
-        }).load({
-            'es': I18N_PATH + '/es.json',
-            'en': I18N_PATH + '/en.json',
-            'pt': I18N_PATH + '/pt.json'
-        });
+        }).load(loadObj);
     }
 
     /**
@@ -140,7 +164,7 @@
                 updateLanguage(language);
             },
             languages: SUPPORTED_LANGUAGES,
-            quickList: ['es', 'en', 'pt']
+            quickList: ['es', 'en', 'pt', 'fr', 'de', 'ru', 'ja', 'zh', 'ar']
         });
     }
 
