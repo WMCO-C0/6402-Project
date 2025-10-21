@@ -1,0 +1,32 @@
+{
+  "@metadata": {
+    "authors": ["6402+ Project Team"],
+    "last-updated": "2025-10-21",
+    "locale": "pt",
+    "message-documentation": "qqq"
+  },
+  "site-title": "6402+ | SEMENTES DE MEMÓRIA",
+  "nav-home": "Início",
+  "nav-about": "Sobre o projeto",
+  "nav-voices": "Ouça suas vozes",
+  "nav-map": "Um mapa de memórias",
+  "nav-press": "O que foi dito",
+  "nav-participate": "Adicione sua semente",
+  "home-title": "6402+ | SEMENTES DE MEMÓRIA",
+  "home-subtitle": "Mais do que um número, são histórias, nomes e vidas levadas. Este memorial procura honrar a memória daqueles que se foram e manter suas memórias vivas.",
+  "home-participate-btn": "Quero participar",
+  "home-learn-project": "Conheça o projeto",
+  "section-building-title": "CONSTRUINDO 6402+",
+  "section-building-text": "6402+ é uma semente de memória plantada no coração do país. O projeto nasceu para homenagear as vítimas de falsos positivos na Colômbia, lembrando-as sob a perspectiva daqueles que mais os amaram: suas mães, famílias e comunidades. Nesta seção você encontrará o contexto do que aconteceu, os motivos que deram origem a este memorial e o processo por trás de sua construção. Você também poderá conhecer as pessoas e grupos que o tornaram possível, unidos pelo compromisso de manter viva a memória.",
+  "section-stories-title": "CONHEÇA SUAS HISTÓRIAS",
+  "section-stories-text": "Neste espaço, as famílias compartilham suas memórias, sua dor e sua força. Cada testemunho é uma forma de semear verdade, de reconstruir a dignidade daqueles que foram levados. Lê-los é aproximar-se de sua humanidade, ouvir o que não pode ser silenciado.",
+  "section-map-title": "UM MAPA DE MEMÓRIAS",
+  "section-map-text-1": "Cada semente neste dente-de-leão representa uma vida que permanece viva em nossa memória. À medida que você se aproxima, descobrirá fragmentos de sua história.",
+  "section-map-text-2": "Explore esta visualização de dados, onde cada semente é uma pessoa, e juntas formam uma história que não deve ser esquecida.",
+  "section-press-title": "VOZES DO PASSADO",
+  "section-press-text": "Ao longo dos anos, várias figuras públicas falaram sobre nós. Algumas palavras deixaram sua marca, outras causaram dor. Nesta linha do tempo compilamos algumas das frases mais representativas que marcaram a narrativa sobre nossa história, refletindo tanto a demanda por justiça quanto a perpetuação do esquecimento.",
+  "section-seed-title": "DEIXE SUA SEMENTE",
+  "section-seed-text": "Este memorial também é feito do que ainda não foi contado. Se você tem uma história para compartilhar, se conheceu uma vítima, se viveu de perto a dor do silêncio, este espaço está aberto para você. Aqui você também pode se juntar como voluntário ou colaborador, e fazer parte daqueles que cuidam e tornam possível esta memória.",
+  "btn-explore": "Explorar",
+  "language-selector-label": "Selecionar idioma"
+}

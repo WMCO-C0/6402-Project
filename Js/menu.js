@@ -42,22 +42,22 @@ function crearMenu() {
                 <div class="  d-flex flex-column justify-content-evenly">
                     <ul class="nav flex-column fs-2  justify-content-evenly" id="MenuEnlaces">
                         <li class="nav-item p-md-1 py-md-1">
-                            <a id="menutxt" class="nav-link active" href="index.html">Inicio</a>
+                            <a id="menutxt" class="nav-link active" href="index.html" data-i18n="nav-home">Inicio</a>
                         </li>
                         <li class="nav-item p-md-1 py-md-1">
-                            <a id="menutxt" class="nav-link active" href="creditos.html">Acerca del proyecto</a>
+                            <a id="menutxt" class="nav-link active" href="creditos.html" data-i18n="nav-about">Acerca del proyecto</a>
                         </li>
                         <li class="nav-item p-md-2 py-md-1">
-                            <a id="menutxt" class="nav-link " href="testimonios.html">Escuchas sus voces</a>
+                            <a id="menutxt" class="nav-link " href="testimonios.html" data-i18n="nav-voices">Escuchas sus voces</a>
                         </li>
                         <li class="nav-item p-md-2 py-md-1">
-                            <a id="menutxt"  class="nav-link" href="https://nidumar.itch.io/6402">Un mapa de memorias</a>
+                            <a id="menutxt"  class="nav-link" href="https://nidumar.itch.io/6402" data-i18n="nav-map">Un mapa de memorias</a>
                         </li>
                         <li class="nav-item p-md-2 py-md-1">
-                            <a id="menutxt"  class="nav-link" href="prensa.html">Lo que se dijo</a>
+                            <a id="menutxt"  class="nav-link" href="prensa.html" data-i18n="nav-press">Lo que se dijo</a>
                         </li>
                         <li class="nav-item p-md-2 py-md-1">
-                            <a  id="menutxt" class="nav-link" href="formulario.html">Suma tu semilla</a>
+                            <a  id="menutxt" class="nav-link" href="formulario.html" data-i18n="nav-participate">Suma tu semilla</a>
                         </li>
                     </ul>
                 </div>
