@@ -97,6 +97,9 @@
         // Refresh all i18n text
         refreshI18nText();
 
+        // Update the language selector button text to show current language
+        updateCurrentLanguageDisplay();
+
         // Trigger custom event
         $(document).trigger('languageChanged', [lang]);
     }
