@@ -793,3 +793,62 @@ p{
   background-color: #473B32;
 }
 /* FINAL DE CSS */
+
+/* Language Selector Styles */
+.language-selector {
+  position: relative;
+  z-index: 1050;
+}
+
+.language-selector .btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #F1E8D9;
+  color: #F1E8D9;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+}
+
+.language-selector .btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: #F1E8D9;
+  color: #F1E8D9;
+}
+
+.language-selector .dropdown-menu {
+  background-color: #836857;
+  border: 1px solid #F1E8D9;
+}
+
+.language-selector .dropdown-item {
+  color: #F1E8D9;
+  transition: background-color 0.2s ease;
+}
+
+.language-selector .dropdown-item:hover {
+  background-color: rgba(241, 232, 217, 0.1);
+  color: #F1E8D9;
+}
+
+.language-selector .dropdown-item.active {
+  background-color: rgba(241, 232, 217, 0.2);
+  color: #F1E8D9;
+}
+
+/* ULS Specific Styles */
+.uls-menu {
+  background-color: #F1E8D9 !important;
+  border: 1px solid #836857 !important;
+}
+
+.uls-language-list li {
+  color: #836857 !important;
+}
+
+.uls-language-list li:hover {
+  background-color: rgba(131, 104, 87, 0.1) !important;
+}
+
+.uls-search {
+  border-color: #836857 !important;
+}
