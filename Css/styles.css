@@ -796,8 +796,9 @@ p{
 
 /* Language Selector Styles */
 .language-selector {
-  position: relative;
+  position: relative !important;
   z-index: 10600;
+  display: inline-block;
 }
 
 .language-selector .btn {
@@ -837,10 +838,9 @@ p{
 
 /* ULS Specific Styles - Enhanced Wikipedia-like styling */
 .uls-menu {
-  position: absolute !important;
-  top: 100% !important;
-  right: 0 !important;
-  margin-top: 8px !important;
+  position: fixed !important;
+  top: 60px !important;
+  right: 20px !important;
   background-color: #fff !important;
   border: 1px solid #a2a9b1 !important;
   border-radius: 2px !important;
