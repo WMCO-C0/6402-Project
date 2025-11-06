@@ -1,7 +1,5 @@
 .uls-trigger {
-	background: url( ../images/language.png ) no-repeat left center;
-	/* @embed */
-	background-image: linear-gradient( transparent, transparent ), url( ../images/language.svg );
+	background: url( ../images/language.svg ) no-repeat left center;
 	padding-left: 24px;
 }
 
@@ -23,12 +21,10 @@
 
 .uls-wide {
 	min-width: 715px;
-	width: 45%;
 }
 
 .uls-medium {
 	min-width: 360px;
-	width: 30%;
 }
 
 /* Override the grid */
@@ -38,7 +34,6 @@
 
 .uls-narrow {
 	min-width: 180px;
-	width: 20%;
 }
 
 /* Override the grid */
@@ -65,16 +60,14 @@
 }
 
 .uls-search-label {
-	background: url( ../images/search.png ) no-repeat center center;
-	/* @embed */
-	background-image: linear-gradient( transparent, transparent ), url( ../images/search.svg );
+	background: url( ../images/search.svg ) no-repeat center center;
 	background-size: 20px;
 	height: 32px;
 	width: 44px;
 	display: block;
 	position: absolute;
 	left: 0;
-	opacity: 0.8;
+	opacity: 0.5;
 }
 
 .uls-search-input-wrapper {
@@ -83,11 +76,9 @@
 
 /* There are two input boxes. This class applies to both of them */
 .uls-filterinput {
-	font-size: 16px;
+	font-size: 1.143em;
 	height: 32px;
 	width: 100%;
-	/* For the custom clear (X) icon */
-	padding: 6px 25px 6px 0;
 	outline: 0;
 	border: 0;
 	display: block;
@@ -110,18 +101,13 @@
 }
 
 .uls-languagefilter-clear {
-	background: url( ../images/clear.png ) no-repeat left center;
-	/* @embed */
-	background-image: linear-gradient( transparent, transparent ), url( ../images/clear.svg );
+	background: url( ../images/close.svg ) no-repeat left center;
 	background-size: 15px;
 	cursor: pointer;
 	height: 15px;
 	width: 15px;
-
-	/* Vertical margins: (32 - 15) / 2 */
 	margin: 8.5px 5px;
 	position: absolute;
 	right: 0;
-	/* Make it appear above the input boxes */
 	z-index: 1;
 }
