@@ -841,6 +841,7 @@ p{
   position: fixed !important;
   top: 60px !important;
   right: 20px !important;
+  left: auto !important;
   background-color: #fff !important;
   border: 1px solid #a2a9b1 !important;
   border-radius: 2px !important;
