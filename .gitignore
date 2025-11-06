@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build outputs
+dist/
+build/
+
+# Temporary files
+.DS_Store
+*.tmp
+*.log
+
+# Keep libs folder (contains distributed library files)
+!libs/
