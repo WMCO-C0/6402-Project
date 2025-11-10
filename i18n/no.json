@@ -1,0 +1,43 @@
+{
+  "@metadata": {
+    "authors": [
+      "6402+ Project Team"
+    ],
+    "last-updated": "2025-10-21",
+    "locale": "no",
+    "message-documentation": "qqq"
+  },
+  "site-title": "6402+ | MINNEFRØ",
+  "nav-home": "Hjem",
+  "nav-about": "Om prosjektet",
+  "nav-voices": "Hør stemmene deres",
+  "nav-map": "Et kart over minner",
+  "nav-press": "Hva som ble sagt",
+  "nav-participate": "Legg til frøet ditt",
+  "home-title": "6402+ | SEMILLAS DE MEMORIA",
+  "home-subtitle": "Más que un número, son historias, nombres y vidas arrebatadas.",
+  "home-participate-btn": "Quiero participar",
+  "home-learn-project": "Conoce el proyecto",
+  "section-building-title": "CONSTRUYENDO 6402+",
+  "section-building-text": "Un memorial para las víctimas.",
+  "section-stories-title": "CONOCE SUS HISTORIAS",
+  "section-stories-text": "Las familias comparten sus recuerdos.",
+  "section-map-title": "UN MAPA DE MEMORIAS",
+  "section-map-text-1": "Cada semilla representa una vida.",
+  "section-map-text-2": "Explora esta visualización de datos.",
+  "section-press-title": "VOCES DEL PASADO",
+  "section-press-text": "Frases que han marcado la historia.",
+  "section-seed-title": "DEJA TU SEMILLA",
+  "section-seed-text": "Comparte tu historia.",
+  "btn-explore": "Utforsk",
+  "language-selector-label": "Velg språk",
+  "uls-search-placeholder": "Search language",
+  "uls-common-languages": "Common languages",
+  "uls-region-WW": "Worldwide",
+  "uls-region-AM": "Americas",
+  "uls-region-EU": "Europe",
+  "uls-region-ME": "Middle East",
+  "uls-region-AF": "Africa",
+  "uls-region-AS": "Asia",
+  "uls-region-PA": "Pacific"
+}

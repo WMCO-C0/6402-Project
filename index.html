@@ -11,6 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- ULS Styles -->
+    <link rel="stylesheet" href="libs/jquery.uls.css">
+    <link rel="stylesheet" href="libs/jquery.uls.grid.css">
+    <link rel="stylesheet" href="libs/jquery.uls.lcd.css">
 
     
 
@@ -31,13 +36,13 @@
         <div class="container-fluid text-overlay" >
           <div class="row">
             <div class=" col-12 col-md-10 Vinicial d-flex flex-column  align-items-md-start  justify-content-center text-white text-center p-md-5">
-              <h1 class="fw-bold mb-3 mb-md-5 letraGrande" >6402+ | SEMILLAS DE MEMORIA</h1>
-              <p class="lead w-100 w-md-75 w mb-3 mb-md-5 text-start  ">Más que un número, son historias, nombres y vidas arrebatadas. Este memorial busca honrar la memoria de quienes ya no están y mantener vivos sus recuerdos.</p>
-              <a href="formulario.html" id="hoverBotones"  type="button " class="btn btn-outline-light  ">Quiero participar <i class="fas fa-arrow-right ms-2"></i>
+              <h1 class="fw-bold mb-3 mb-md-5 letraGrande" data-i18n="home-title">6402+ | SEMILLAS DE MEMORIA</h1>
+              <p class="lead w-100 w-md-75 w mb-3 mb-md-5 text-start" data-i18n="home-subtitle">Más que un número, son historias, nombres y vidas arrebatadas. Este memorial busca honrar la memoria de quienes ya no están y mantener vivos sus recuerdos.</p>
+              <a href="formulario.html" id="hoverBotones"  type="button " class="btn btn-outline-light  "><span data-i18n="home-participate-btn">Quiero participar</span> <i class="fas fa-arrow-right ms-2"></i>
               </a>
             </div>
             <div class=" col-12 col-md-2 d-flex flex-column justify-content-center align-items-center ">
-              <h3 class="fw-bold letraPequeña">Conoce el proyecto</h3>
+              <h3 class="fw-bold letraPequeña" data-i18n="home-learn-project">Conoce el proyecto</h3>
               <div>
                 <a href="#InicioProyecto" id="btnRedondo" type="button " class="btn btn-outline-light  "><i class="fas fa-arrow-down"></i>
                 </a>
@@ -54,14 +59,14 @@
       <div class="container-fluid px-5">
         <div class="row mt-5 ">
           <div class="col-12  col-md-4 d-flex flex-column justify-content-center">
-            <h2 class=" txtSectionDos fw-bold mb-5">CONSTRUYENDO 6402+</h2>
+            <h2 class=" txtSectionDos fw-bold mb-5" data-i18n="section-building-title">CONSTRUYENDO 6402+</h2>
             <img src="Img/proyecto.png" alt="" class="img-fluid ImgMouse">
           </div>
           <div class=" col-12 col-md-4 d-flex flex-column justify-content-center align-items-start">
-            <p class="mt-5">6402+ es una semilla de memoria sembrada en el corazón del país.El proyecto nace para honrar a las víctimas de los falsos positivos en Colombia, recordándolas desde la mirada de quienes más los amaron: sus madres, familias y comunidades.<br>En esta sección encontrarás el trasfondo de lo ocurrido, las razones que dieron origen a este memorial y el proceso detrás de su construcción. También podrás conocer a las personas y colectivos que lo hicieron posible, unidos por el compromiso de mantener viva la memoria.
+            <p class="mt-5" data-i18n-html="section-building-text" data-i18n="section-building-text">6402+ es una semilla de memoria sembrada en el corazón del país.El proyecto nace para honrar a las víctimas de los falsos positivos en Colombia, recordándolas desde la mirada de quienes más los amaron: sus madres, familias y comunidades.<br>En esta sección encontrarás el trasfondo de lo ocurrido, las razones que dieron origen a este memorial y el proceso detrás de su construcción. También podrás conocer a las personas y colectivos que lo hicieron posible, unidos por el compromiso de mantener viva la memoria.
             </p>
             <div>
-              <a href="creditos.html"id="hoverBotones" type="button " class="btn btn-outline-light">Explorar <i class="fas fa-arrow-right ms-2"></i>
+              <a href="creditos.html"id="hoverBotones" type="button " class="btn btn-outline-light"><span data-i18n="btn-explore">Explorar</span> <i class="fas fa-arrow-right ms-2"></i>
               </a>
             </div>
           </div>
@@ -83,14 +88,14 @@
         </div>
         <div class="row row-cols-2 mt-5 ">
           <div class="col-12 col-md-6">
-            <h2 class=" tituloTres fw-bold w-75">CONOCE SUS HISTORIAS</h2>
+            <h2 class=" tituloTres fw-bold w-75" data-i18n="section-stories-title">CONOCE SUS HISTORIAS</h2>
           </div>
           <div class="col-12 col-md-6 flex-column justify-content-center align-items-start">
-            <p class="w-75">En este espacio, las familias comparten sus recuerdos, su dolor y su fuerza.Cada testimonio es una forma de sembrar verdad, de reconstruir la dignidad de quienes fueron arrebatados.
+            <p class="w-75" data-i18n="section-stories-text">En este espacio, las familias comparten sus recuerdos, su dolor y su fuerza.Cada testimonio es una forma de sembrar verdad, de reconstruir la dignidad de quienes fueron arrebatados.
               <br> <br>Leerlos es acercarse a su humanidad, escuchar lo que no puede callarse.
             </p>
             <div>
-              <a href="testimonios.html"  type="button " id="hoverBotones" class="btn btn-outline-light" >Explorar <i class="fas fa-arrow-right ms-3"></i>
+              <a href="testimonios.html"  type="button " id="hoverBotones" class="btn btn-outline-light" ><span data-i18n="btn-explore">Explorar</span> <i class="fas fa-arrow-right ms-3"></i>
               </a> 
             </div>
                 
@@ -192,10 +197,10 @@
             <img src="Img/DataVizActualizado.png" alt="" class="img-fluid imgData ImgMouse">
           </div>
           <div class="col-12 col-md-6 d-flex flex-column align-items-start justify-content-around">
-            <h2 class="fw-bold txtSectionData w-75">UN MAPA DE MEMORIAS</h2>
-            <p>Cada semilla en este diente de león representa una vida que sigue viva en nuestra memoria. Al acercarte, descubrirás fragmentos de su historia.</p>
-            <p>Explora esta visualización de datos, donde cada semilla es una persona, y juntas forman un relato que no debe olvidarse.</p>
-            <a href="https://nidumar.itch.io/6402"  type="button " id="hoverBotones"  class="btn btn-outline-light mb-3">Explorar <i class="fas fa-arrow-right ms-3"></i>
+            <h2 class="fw-bold txtSectionData w-75" data-i18n="section-map-title">UN MAPA DE MEMORIAS</h2>
+            <p data-i18n="section-map-text-1">Cada semilla en este diente de león representa una vida que sigue viva en nuestra memoria. Al acercarte, descubrirás fragmentos de su historia.</p>
+            <p data-i18n="section-map-text-2">Explora esta visualización de datos, donde cada semilla es una persona, y juntas forman un relato que no debe olvidarse.</p>
+            <a href="https://nidumar.itch.io/6402"  type="button " id="hoverBotones"  class="btn btn-outline-light mb-3"><span data-i18n="btn-explore">Explorar</span> <i class="fas fa-arrow-right ms-3"></i>
             </a>
           </div>
 
@@ -263,15 +268,15 @@
         <div class="row mb-5">
           
           <div class="col-12 col-md-3">
-            <h2 class="txtSectionDos fw-bold">DEJA TU SEMILLA</h2>
+            <h2 class="txtSectionDos fw-bold" data-i18n="section-seed-title">DEJA TU SEMILLA</h2>
             <img src="Img/sumaraccion.png" alt="" class="img-fluid imSemilla ImgMouse">
           </div>
           <div class="col-12 col-md-4  d-flex flex-column justify-content-center align-items-start">
-            <p class="mt-5">Este memorial también está hecho de lo que aún no se ha contado. <br><br>
+            <p class="mt-5" data-i18n-html="section-seed-text" data-i18n="section-seed-text">Este memorial también está hecho de lo que aún no se ha contado. <br><br>
               Si tienes una historia por compartir, si conociste a una víctima, si viviste de cerca el dolor del silencio, este espacio está abierto para ti. <br><br>
               Aquí también puedes unirte como voluntario o colaborador, y ser parte de quienes cuidan y hacen posible esta memoria.
             </p>
-            <a href="formulario.html" id="hoverBotones" btype="button " class="btn btn-outline-light mt-5 mb-5">Explorar <i class="fas fa-arrow-right ms-3"></i>
+            <a href="formulario.html" id="hoverBotones" btype="button " class="btn btn-outline-light mt-5 mb-5"><span data-i18n="btn-explore">Explorar</span> <i class="fas fa-arrow-right ms-3"></i>
             </a>
           </div>
           <div class="col-12 col-md-5 d-flex justify-content-center">
@@ -279,23 +284,35 @@
           </div>
         </div>
       </div>
-      <div class="idiomas">
-        <span class="es">Español</span>
-        <input type="checkbox" class="check">
-        <span class="en">Inglés</span>
-
-      </div>
-
       
       
      </section>
     <!-- Footer -->
 
 
-    <!-- Scripts de Bootstrap -->
-    <script src="Js/homeEn.js"></script>
-    <script src="Js/footer.js"></script>
+    <!-- Scripts -->
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/jquery.i18n.js"></script>
+    <script src="libs/jquery.i18n.messagestore.js"></script>
+    <script src="libs/jquery.i18n.parser.js"></script>
+    <script src="libs/jquery.i18n.emitter.js"></script>
+    <script src="libs/jquery.i18n.language.js"></script>
+    
+    <!-- ULS Scripts -->
+    <script src="libs/jquery.uls.data.js"></script>
+    <script src="libs/jquery.uls.data.utils.js"></script>
+    <script src="libs/jquery.uls.core.js"></script>
+    <script src="libs/jquery.uls.lcd.js"></script>
+    <script src="libs/jquery.uls.languagefilter.js"></script>
+    
+    <!-- i18n Configuration -->
+    <script src="Js/i18n-config.js"></script>
+    
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- App Scripts -->
+    <script src="Js/footer.js"></script>
     <script src="Js/menu.js"></script>
 </body>
 </html>
