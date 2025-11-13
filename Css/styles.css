@@ -792,358 +792,270 @@ p{
   display: none;
   background-color: #473B32;
 }
+
+/*CSS "ESCUCHA SUS VOCES"*/
+/* ===== Slider Historias ===== */
+.slider-historias {
+  
+ 
+  color: #fff;
+}
+
+.slider-historias .slides {
+  
+  overflow: hidden;
+  border-radius: 16px;
+  min-height: 603px; /* ajusta según tu Figma */
+  background: #1d1a18;
+}
+
+.slider-historias .slide {
+  position: absolute;
+  inset: 0;
+  display: none;
+  padding: clamp(20px, 3vw, 36px);
+  background-size: cover;
+  background-position: center;
+  transition: opacity 500ms ease, transform 600ms ease;
+  opacity: 0;
+  transform: translateX(3%);
+}
+
+.slider-historias .slide.is-active {
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slider-historias .slide .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 16, 14, 0.55); /* oscurece fondo */
+  backdrop-filter: blur(1px);
+  z-index: 0;
+}
+
+.slider-historias .row { position: relative; z-index: 1; }
+.slider-historias .persona-img {
+  width: 100%;
+  max-height: 460px;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 24px rgba(0,0,0,.35));
+}
+
+.slider-historias .content-top {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+.slider-historias .content-top__cta {
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-weight: 600;
+}
+
+.slider-historias .persona-nombre {
+  font-family: var(--heading-font, "Montserrat", system-ui, sans-serif);
+  font-size: clamp(22px, 2.6vw, 34px);
+  letter-spacing: .5px;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+}
+.slider-historias .persona-desc {
+  max-width: 60ch;
+  opacity: .95;
+  margin-bottom: 18px;
+}
+
+.slider-historias .content-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* === Centrado inferior de los puntos del slider === */
+.slider-historias .slider-dots {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(16px, 2.6vw, 28px); /* ajusta según Figma */
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 4;
+}
+
+.slider-historias .dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.45);
+  border: none;
+  cursor: pointer;
+  transition: transform .2s ease, background .2s ease;
+}
+
+.slider-historias .dot[aria-selected="true"] {
+  background: #fff;
+  transform: scale(1.2);
+}
+
+/* Botón audio */
+.slider-historias .btn-audio {
+  border: 2px solid rgba(255,255,255,.6);
+  background: transparent;
+  color: #fff;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-weight: 600;
+  line-height: 1;
+}
+.slider-historias .btn-audio .icon-pause { display: none; }
+.slider-historias .btn-audio[aria-pressed="true"] .icon-play { display: none; }
+.slider-historias .btn-audio[aria-pressed="true"] .icon-pause { display: inline; }
+
+/* Flechas */
+.slider-historias .slider-arrow {
+  position: absolute;
+  translate: 0 -50%;
+  z-index: 3;
+  width: 1px; height: 1px;
+  transition: transform .2s ease, background .2s ease;
+  background-color: #836857 ;
+  border: #836857;
+}
+.slider-historias .slider-arrow:hover { transform: scale(1.04); }
+.slider-historias .slider-arrow.left  { left: -10px; }
+.slider-historias .slider-arrow.right { right: 40px; }
+.slider-historias .slider-arrow span { font-size: 26px; line-height: 1; }
+
+/* Dots */
+.slider-historias .dots {
+  display: flex; gap: 8px; align-items: center;
+}
+.slider-historias .dot {
+  width: 9px; height: 9px; border-radius: 50%;
+  background: rgba(255,255,255,.45);
+  border: none; cursor: pointer;
+  transition: transform .2s ease, background .2s ease;
+}
+.slider-historias .dot[aria-selected="true"] {
+  background: #fff; transform: scale(1.2);
+}
+
+/* Responsivo */
+@media (max-width: 991.98px) {
+  .slider-historias .slides { min-height: 620px; }
+  .slider-historias .persona-desc { max-width: 70ch; }
+}
+
+@media (max-width: 575.98px) {
+  .slider-historias .slides { min-height: 680px; }
+  .slider-historias .slider-arrow { width: 40px; height: 40px; }
+}
+
+/* Contenedor para posicionar el nombre sobre la imagen */
+.slider-historias .persona-wrap {
+  position: relative;
+  width: 100%;
+  /* Valores por defecto (puedes sobrescribir por slide con style="--name-left:..; --name-bottom:..") */
+  --name-left: clamp(12px, 2.2vw, 32px);
+  --name-bottom: clamp(10px, 2.2vw, 28px);
+}
+
+/* Imagen de la persona */
+.slider-historias .persona-img {
+  width: 100%;
+  max-height: 500px;
+  position: relative;
+  margin-bottom: -24rem;
+}
+
+/* Nombre sobrepuesto (abajo-izquierda por defecto) */
+.slider-historias .persona-name-overlay {
+  position: absolute;
+  left: var(--name-left);
+  bottom: var(--name-bottom);
+  z-index: 2;
+  font-family: var(--heading-font, "Montserrat", system-ui, sans-serif);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: clamp(22px, 4vw, 54px); /* ajusta al tamaño de tu Figma */
+  color: #efe5db; /* beige del mockup */
+  line-height: 1.05;
+  text-shadow: 0 2px 6px rgba(0,0,0,.45); /* legibilidad sobre fondos oscuros */
+  pointer-events: none; /* que no interfiera con clics en la imagen */
+}
+
+/* Opcional: base sutil para contraste extra (desactívala si no la quieres) */
+.slider-historias .persona-name-overlay::before {
+  content: "";
+  position: absolute;
+  inset: -6px -12px -6px -12px;
+  background: linear-gradient(90deg, rgba(0,0,0,.32), rgba(0,0,0,0));
+  border-radius: 6px;
+  z-index: -1;
+}
+
+/* Responsive: si en móvil prefieres bajarlo un poco y reducir tamaño */
+@media (max-width: 575.98px) {
+  .slider-historias .persona-name-overlay {
+    font-size: clamp(18px, 6.4vw, 32px);
+  }
+}
+.content-top__cta-img{
+  padding-right: 5rem;
+ 
+}
+/*==================================================================================pagina de madres MAFAPO*/
+#Retrato-madre{
+  margin-top: -5rem;
+}
+.audio-amb{
+  float: right;
+  margin-right: 26rem;
+  margin-top: -25rem;
+  border-width: 3px;
+}
+
+
+#Quien-soy{
+  margin: 3rem;
+}
+#la-vida-con-mi-hijo{
+  margin: 3rem;
+}
+#El-dia-perdida{
+  margin: 5rem;
+}
+#mi-vida-hoy{
+  background-image: url("/Img/fondo-mi-vida-hoy.png");
+}
+#content-mi-vida{
+  padding-top: 10rem;
+  margin: 3rem;
+}
+.imagenes-neg{
+  padding: -3rem;
+}
+
+/*==================================popup*/
+.popup{
+  padding: 15px;
+  position: fixed;
+  width: 90%;
+  background-color:#4B3D33 ;
+  border-radius: 20px;
+  top: 0;
+  transform: translate(-50%,-50%) scale(0.1);
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+  visibility: visible;
+  top: 50%;
+  transform: translate(0%,-50%) scale(1);
+}
+
+
 /* FINAL DE CSS */
-
-/* Language Selector Styles */
-.language-selector {
-  position: relative !important;
-  z-index: 10600;
-  display: inline-block;
-}
-
-.language-selector .btn {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid #F1E8D9;
-  color: #F1E8D9;
-  padding: 0.375rem 0.75rem;
-  font-size: 0.875rem;
-  transition: all 0.3s ease;
-}
-
-.language-selector .btn:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-color: #F1E8D9;
-  color: #F1E8D9;
-}
-
-.language-selector .dropdown-menu {
-  background-color: #836857;
-  border: 1px solid #F1E8D9;
-}
-
-.language-selector .dropdown-item {
-  color: #F1E8D9;
-  transition: background-color 0.2s ease;
-}
-
-.language-selector .dropdown-item:hover {
-  background-color: rgba(241, 232, 217, 0.1);
-  color: #F1E8D9;
-}
-
-.language-selector .dropdown-item.active {
-  background-color: rgba(241, 232, 217, 0.2);
-  color: #F1E8D9;
-}
-
-/* ULS Specific Styles - Enhanced Wikipedia-like styling */
-.uls-menu {
-  position: fixed !important;
-  top: 60px !important;
-  right: 20px !important;
-  left: auto !important;
-  background-color: #fff !important;
-  border: 1px solid #a2a9b1 !important;
-  border-radius: 2px !important;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25) !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Lato, Helvetica, Arial, sans-serif !important;
-  min-width: 300px !important;
-  max-width: 600px !important;
-  width: auto !important;
-  z-index: 10500 !important;
-}
-
-.uls-menu .uls-title {
-  background-color: #f8f9fa !important;
-  border-bottom: 1px solid #a2a9b1 !important;
-  color: #202122 !important;
-  font-weight: bold !important;
-  padding: 8px 16px !important;
-}
-
-/* Search box styling */
-.uls-search {
-  background-color: #f8f9fa !important;
-  border-bottom: 1px solid #c8ccd1 !important;
-  padding: 8px 16px !important;
-}
-
-.uls-search-wrapper {
-  position: relative !important;
-  padding-left: 32px !important;
-}
-
-.uls-search-label {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="%2354595d" d="M12.2 13.6a7 7 0 1 1 1.4-1.4l5.4 5.4-1.4 1.4-5.4-5.4zM3 8a5 5 0 1 0 10 0A5 5 0 0 0 3 8z"/></svg>') !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  background-size: 16px !important;
-  opacity: 0.51 !important;
-  width: 32px !important;
-  height: 32px !important;
-  position: absolute !important;
-  left: 0 !important;
-}
-
-.uls-filterinput {
-  font-size: 14px !important;
-  padding: 6px 24px 6px 0 !important;
-  border: 1px solid #a2a9b1 !important;
-  border-radius: 2px !important;
-  background-color: #fff !important;
-  color: #202122 !important;
-}
-
-.uls-filterinput:focus {
-  border-color: #36c !important;
-  outline: 0 !important;
-  box-shadow: inset 0 0 0 1px #36c !important;
-}
-
-.uls-languagefilter-clear {
-  cursor: pointer !important;
-  opacity: 0.51 !important;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="%2354595d" d="M10 0a10 10 0 1 0 10 10A10 10 0 0 0 10 0zm5.66 14.24l-1.41 1.41L10 11.41l-4.24 4.25-1.42-1.42L8.59 10 4.34 5.76l1.42-1.42L10 8.59l4.24-4.24 1.41 1.41L11.41 10z"/></svg>') !important;
-  background-repeat: no-repeat !important;
-  background-size: 12px !important;
-  background-position: center !important;
-  width: 24px !important;
-  height: 32px !important;
-  margin: 0 !important;
-}
-
-.uls-languagefilter-clear:hover {
-  opacity: 0.73 !important;
-}
-
-/* Language list styling */
-.uls-language-list {
-  padding: 8px 0 !important;
-  max-height: 400px !important;
-  overflow-y: auto !important;
-}
-
-.uls-language-list li {
-  color: #202122 !important;
-  padding: 6px 16px !important;
-  cursor: pointer !important;
-  font-size: 14px !important;
-  line-height: 1.6 !important;
-  transition: background-color 100ms !important;
-}
-
-.uls-language-list li:hover {
-  background-color: #eaecf0 !important;
-}
-
-.uls-language-list li.uls-language-selected {
-  background-color: #eaf3ff !important;
-  color: #36c !important;
-}
-
-/* Region headers */
-.uls-language-list h3 {
-  color: #54595d !important;
-  font-size: 12px !important;
-  font-weight: bold !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.5px !important;
-  padding: 8px 16px 4px !important;
-  margin: 8px 0 0 !important;
-  border-top: 1px solid #eaecf0 !important;
-}
-
-.uls-language-list h3:first-child {
-  border-top: none !important;
-  margin-top: 0 !important;
-}
-
-/* Grid layout for language columns */
-.uls-menu.uls-wide .uls-language-list {
-  column-count: 3 !important;
-  column-gap: 0 !important;
-}
-
-.uls-menu.uls-medium .uls-language-list {
-  column-count: 2 !important;
-  column-gap: 0 !important;
-}
-
-/* Scrollbar styling */
-.uls-language-list::-webkit-scrollbar {
-  width: 8px !important;
-}
-
-.uls-language-list::-webkit-scrollbar-track {
-  background: #f8f9fa !important;
-}
-
-.uls-language-list::-webkit-scrollbar-thumb {
-  background: #c8ccd1 !important;
-  border-radius: 4px !important;
-}
-
-.uls-language-list::-webkit-scrollbar-thumb:hover {
-  background: #a2a9b1 !important;
-}
-
-/* Mobile-responsive ULS styles */
-@media (max-width: 768px) {
-  /* Make language selector button more compact on mobile */
-  .language-selector .btn {
-    padding: 0.25rem 0.5rem !important;
-    font-size: 0.75rem !important;
-  }
-  
-  .language-selector .btn i {
-    font-size: 0.875rem !important;
-  }
-  
-  /* Full-width ULS menu on mobile */
-  .uls-menu {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    min-width: auto !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    border-radius: 0 !important;
-    z-index: 10500 !important;
-  }
-  
-  /* Search area styling for mobile */
-  .uls-search {
-    padding: 12px 16px !important;
-    border-bottom: 2px solid #c8ccd1 !important;
-  }
-  
-  .uls-search-wrapper {
-    padding-left: 40px !important;
-  }
-  
-  .uls-search-label {
-    width: 40px !important;
-    height: 40px !important;
-    background-size: 20px !important;
-  }
-  
-  .uls-filterinput {
-    font-size: 16px !important;
-    padding: 10px 30px 10px 0 !important;
-    height: 40px !important;
-  }
-  
-  .uls-languagefilter-clear {
-    width: 30px !important;
-    height: 40px !important;
-    background-size: 16px !important;
-  }
-  
-  /* Language list for mobile */
-  .uls-language-list {
-    max-height: calc(100vh - 80px) !important;
-    padding: 12px 0 !important;
-  }
-  
-  .uls-language-list li {
-    padding: 12px 16px !important;
-    font-size: 16px !important;
-    line-height: 1.5 !important;
-    border-bottom: 1px solid #eaecf0 !important;
-  }
-  
-  .uls-language-list li:last-child {
-    border-bottom: none !important;
-  }
-  
-  /* Region headers for mobile */
-  .uls-language-list h3 {
-    font-size: 13px !important;
-    padding: 12px 16px 6px !important;
-    margin: 12px 0 0 !important;
-    background-color: #f8f9fa !important;
-    position: sticky !important;
-    top: 0 !important;
-    z-index: 10 !important;
-  }
-  
-  .uls-language-list h3:first-child {
-    margin-top: 0 !important;
-  }
-  
-  /* Disable column layout on mobile */
-  .uls-menu.uls-wide .uls-language-list,
-  .uls-menu.uls-medium .uls-language-list {
-    column-count: 1 !important;
-  }
-  
-  /* Add close button area for mobile */
-  .uls-menu::before {
-    content: '✕' !important;
-    position: absolute !important;
-    top: 12px !important;
-    right: 12px !important;
-    width: 32px !important;
-    height: 32px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    font-size: 20px !important;
-    color: #54595d !important;
-    cursor: pointer !important;
-    z-index: 100 !important;
-    background-color: transparent !important;
-    border-radius: 4px !important;
-    transition: background-color 0.2s !important;
-  }
-  
-  .uls-menu::before:hover {
-    background-color: #eaecf0 !important;
-  }
-  
-  /* Larger touch targets for mobile */
-  .uls-language-list li {
-    min-height: 48px !important;
-  }
-  
-  /* Improve scrollbar for touch devices */
-  .uls-language-list::-webkit-scrollbar {
-    width: 4px !important;
-  }
-}
-
-/* Tablet-specific adjustments */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .uls-menu {
-    min-width: 400px !important;
-    max-width: 600px !important;
-  }
-  
-  .uls-menu.uls-wide .uls-language-list {
-    column-count: 2 !important;
-  }
-}
-
-/* Landscape mobile adjustments */
-@media (max-width: 768px) and (orientation: landscape) {
-  .uls-language-list {
-    max-height: calc(100vh - 60px) !important;
-  }
-  
-  .uls-search {
-    padding: 8px 16px !important;
-  }
-  
-  .uls-language-list li {
-    padding: 8px 16px !important;
-    min-height: 40px !important;
-  }
-  
-  .uls-language-list h3 {
-    padding: 8px 16px 4px !important;
-  }
-}
