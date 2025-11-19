@@ -803,19 +803,23 @@ p{
 
 .slider-historias .slides {
   
-  overflow: hidden;
-  border-radius: 16px;
-  min-height: 603px; /* ajusta según tu Figma */
+  
+  min-height: 603px; /* or your desired height */
+  height: 100%;
   background: #1d1a18;
 }
 
 .slider-historias .slide {
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
   position: absolute;
   inset: 0;
   display: none;
   padding: clamp(20px, 3vw, 36px);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   transition: opacity 500ms ease, transform 600ms ease;
   opacity: 0;
   transform: translateX(3%);
@@ -825,6 +829,7 @@ p{
   display: block;
   opacity: 1;
   transform: translateX(0);
+  
 }
 
 .slider-historias .slide .overlay {
@@ -922,7 +927,7 @@ p{
   transition: transform .2s ease, background .2s ease;
   background-color: #836857 ;
   border: #836857;
-}
+} 
 .slider-historias .slider-arrow:hover { transform: scale(1.04); }
 .slider-historias .slider-arrow.left  { left: -10px; }
 .slider-historias .slider-arrow.right { right: 40px; }
@@ -944,13 +949,13 @@ p{
 
 /* Responsivo */
 @media (max-width: 991.98px) {
-  .slider-historias .slides { min-height: 620px; }
+  .slider-historias .slides { min-height: 900px; }
   .slider-historias .persona-desc { max-width: 70ch; }
 }
 
 @media (max-width: 575.98px) {
-  .slider-historias .slides { min-height: 680px; }
-  .slider-historias .slider-arrow { width: 40px; height: 40px; }
+  .slider-historias .slides { min-height: 800px; }
+  .slider-historias .slider-arrow { display: none; }
 }
 
 /* Contenedor para posicionar el nombre sobre la imagen */
@@ -967,7 +972,6 @@ p{
   width: 100%;
   max-height: 500px;
   position: relative;
-  margin-bottom: -24rem;
 }
 
 /* Nombre sobrepuesto (abajo-izquierda por defecto) */
@@ -1005,7 +1009,6 @@ p{
 }
 .content-top__cta-img{
   padding-right: 5rem;
- 
 }
 /*==================================================================================pagina de madres MAFAPO*/
 #Retrato-madre{
@@ -1013,8 +1016,8 @@ p{
 }
 .audio-amb{
   float: right;
-  margin-right: 26rem;
-  margin-top: -25rem;
+  margin-right: 20%;
+  margin-top: -20%;
   border-width: 3px;
 }
 
@@ -1050,6 +1053,8 @@ p{
   transform: translate(-50%,-50%) scale(0.1);
   visibility: hidden;
   transition: transform 0.4s, top 0.4s;
+  max-height: 80vh;
+  overflow-y: auto;
 }
 .open-popup{
   visibility: visible;
