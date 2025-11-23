@@ -793,6 +793,17 @@ p{
   background-color: #473B32;
 }
 
+/* Reduce only the top paper image height on desktop; revert previous compact section rules */
+@media (min-width: 992px) {
+  .recorte-papel {
+    max-height: 140px; /* reduce visual height of the paper trim */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+}
+
 /*CSS "ESCUCHA SUS VOCES"*/
 /* ===== Slider Historias ===== */
 .slider-historias {
@@ -807,6 +818,21 @@ p{
   min-height: 603px; /* or your desired height */
   height: 100%;
   background: #1d1a18;
+  touch-action: pan-y; /* allow vertical page scroll, enable horizontal swipe handling */
+}
+
+/* Footer license tweaks: increase size and width on larger screens by ~10% */
+.footer-license .lic-title {
+  font-size: 15.4px; /* ~10% larger than 14px */
+}
+.footer-license .lic-desc {
+  font-size: 14.3px; /* ~10% larger than 13px */
+  max-width: 420px; /* slightly wider than previous 380px so text doesn't feel cramped */
+}
+
+@media (max-width: 991.98px) {
+  .footer-license .lic-title { font-size: 14px; }
+  .footer-license .lic-desc { font-size: 13px; max-width: 100%; }
 }
 
 .slider-historias .slide {
@@ -1032,7 +1058,7 @@ p{
   margin: 5rem;
 }
 #mi-vida-hoy{
-  background-image: url("/Img/fondo-mi-vida-hoy.png");
+  background-image: url("../Img/fondo-mi-vida-hoy.png");
 }
 #content-mi-vida{
   padding-top: 10rem;
@@ -1047,6 +1073,7 @@ p{
   padding: 15px;
   position: fixed;
   width: 90%;
+  max-width: 100%;
   background-color:#4B3D33 ;
   border-radius: 20px;
   top: 0;
@@ -1057,10 +1084,72 @@ p{
   overflow-y: auto;
 }
 .open-popup{
-  visibility: visible;
-  top: 50%;
-  transform: translate(0%,-50%) scale(1);
-}
+    margin: 2%;
+    visibility: visible;
+    top: 50%;
+    transform: translate(0%,-50%) scale(1);
+  }
 
+@media (max-width: 1000px) {
+  .open-popup{
+    margin: 2%;
+    visibility: visible;
+    top: 50%;
+    transform: translate(-10%,-50%) scale(1);
+  }
+  
+}
+@media (max-width: 575.98px) {
+  .open-popup{
+    margin: 2%;
+    visibility: visible;
+    top: 50%;
+    transform: translate(-20%,-50%) scale(1);
+  }
+  
+}
+/* Paper background: make RecorteCreditos large enough and center its content on desktop */
+@media (min-width: 992px) {
+  .creditos-paper-container {
+    /* ensure the paper box encloses the text */
+    min-height: 360px;
+    display: flex;
+    align-items: center; /* vertical centering */
+    justify-content: center; /* horizontal centering */
+    padding: 1.5rem !important;
+    box-sizing: border-box;
+  }
+
+  .creditos-paper-container > img.position-absolute {
+    object-fit: cover !important;
+    object-position: center center !important;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+  }
+
+  /* Make the inner content take full width and center columns' content */
+  .creditos-paper-container .position-relative {
+    z-index: 1;
+    width: 100%;
+  }
+
+  .creditos-paper-container .row {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+  }
+
+  .creditos-paper-container .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* center text content */
+  }
+
+  /* reduce small vertical gaps to keep everything inside the paper box */
+  .creditos-paper-container .mb-4 { margin-bottom: 0.5rem !important; }
+}
 
 /* FINAL DE CSS */

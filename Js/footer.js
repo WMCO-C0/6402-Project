@@ -8,13 +8,19 @@ function crearFooter() {
             <div class="col-12 col-md-4 mt-5">
               <img src="Img/logofooter.png" alt="Logo Footer" class="img-fluid">
             </div>
-            <div class="col-12 col-md-4 mt-5">
-              <p class="fw-light" style="font-size: 16px;">"La memoria no es pasado, es presente y futuro. Mientras sigamos recordando, sus voces seguirán iluminando el camino." 6402+</p>
-              <p style="font-size: 14px;">
-                © Todos los derechos reservados por 6402+ y las organizaciones, instituciones y personas colaboradoras.
-                Este sitio web contiene fotografías y materiales que son propiedad de sus autores, medios y agencias, quienes han autorizado su uso exclusivamente para su publicación en esta plataforma.
-                Diseño y programación: Nombre grupo
-              </p>
+            <div class="col-12 col-md-4 mt-5 d-flex flex-column align-items-center justify-content-center">
+              <div class="d-flex flex-column align-items-center justify-content-center text-center footer-license">
+                <p class="lic-title" style="margin-bottom: .25rem;"><strong>Licencia Creative Commons:</strong> Atribución-NoComercial-SinDerivadas (CC BY-NC-ND 4.0)</p>
+                <p class="lic-desc" style="margin-bottom:.75rem;">Algunas imágenes y materiales en este sitio están disponibles bajo la licencia Creative Commons Atribución-NoComercial-SinDerivadas. Esto permite compartir el material con atribución, pero no permite usos comerciales ni obras derivadas. Para más información sobre la licencia, visita <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener noreferrer" style="color: #F1E8D9; text-decoration: underline;">CC BY-NC-ND 4.0</a>.</p>
+                <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener noreferrer" aria-label="Licencia CC BY-NC-ND" style="display:inline-block;">
+                  <div class="d-flex align-items-center justify-content-center gap-2">
+                    <img src="Img/cc/cc.svg" alt="CC" style="width:40px;height:40px; display:block;">
+                    <img src="Img/cc/by.svg" alt="BY" style="width:40px;height:40px; display:block;">
+                    <img src="Img/cc/nc.svg" alt="NC" style="width:40px;height:40px; display:block;">
+                    <img src="Img/cc/nd.svg" alt="ND" style="width:40px;height:40px; display:block;">
+                  </div>
+                </a>
+              </div>
             </div>
             <div class="col-12 col-md-4 mt-5 d-flex flex-column justify-content-center">
               <div class="d-flex justify-content-evenly">
@@ -33,6 +39,7 @@ function crearFooter() {
               </p>
             </div>
           </div>
+          
         </div>
       </footer>
     `;
