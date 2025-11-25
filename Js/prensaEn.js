@@ -4,9 +4,9 @@ check.addEventListener('click',idioma);
 function idioma(){
     let id=check.checked;
     if (id==true){
-        location.href="EN/news.html";
+        location.href="news.html";
     }else{
-        location.href="../prensa.html";
+        location.href="prensa.html";
     }
     
 }

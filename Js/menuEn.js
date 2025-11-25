@@ -5,10 +5,10 @@ function crearMenu() {
         <nav class=" colorNav navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container-fluid" >
                 <button class="btn btn-tranparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
-                    <img src="../Img/menu.svg" alt="" class= "img-fluid">
+                    <img src="Img/menu.svg" alt="" class= "img-fluid">
                 </button>
                 <a href="home.html">
-                    <img src="../Img/LogoHome.png" alt="" class = "img-fluid logoHome">
+                    <img src="Img/LogoHome.png" alt="" class = "img-fluid logoHome">
                 </a>
                  
             </div>
@@ -34,7 +34,7 @@ function crearMenu() {
                 <div class=" lineaLogo d-flex flex-column justify-content-center ">
                     
                     <a href="home.html">
-                        <img src="../Img/LogoHome.png" class="img-fluid logoMenu" alt="Logo de WikiMedia Colombia">
+                        <img src="Img/LogoHome.png" class="img-fluid logoMenu" alt="Logo de WikiMedia Colombia">
                     </a>
                 </div>
                 <!-- Enlaces -->

@@ -3,142 +3,142 @@ const testimonios = [
     {id: 1, nombre: "Maria Esperanza",
             motto: "Maria Esperanza Rojas", 
             testimonio: "LoooremLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-            imagen: "../Img/abuelaColor.png",
-            imagenModal01:"../Img/bebeColor.png",
-            imagenModal02:"../Img/maletaColor.png"
+            imagen: "Img/abuelaColor.png",
+            imagenModal01:"Img/bebeColor.png",
+            imagenModal02:"Img/maletaColor.png"
     },
     {id: 2, nombre: "Rosa Mendez",
         motto: "Rosa Mendez Rojas", 
         testimonio: "LoooremLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        imagen: "../Img/abuelaColor.png",
-        imagenModal01:"../Img/bebeColor.png",
-        imagenModal02:"../Img/maletaColor.png"
+        imagen: "Img/abuelaColor.png",
+        imagenModal01:"Img/bebeColor.png",
+        imagenModal02:"Img/maletaColor.png"
     },
     {id: 3, nombre: "Clara Rodriguez",
         motto: "Clara Rodriguez", 
         testimonio: "LoooremLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        imagen: "../Img/abuelaColor.png",
-        imagenModal01:"../Img/bebeColor.png",
-        imagenModal02:"../Img/maletaColor.png"
+        imagen: "Img/abuelaColor.png",
+        imagenModal01:"Img/bebeColor.png",
+        imagenModal02:"Img/maletaColor.png"
     },
     {id: 4, nombre: "Alba González",
         motto: "Alba González Rojas", 
         testimonio: "LoooremLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        imagen: "../Img/abuelaColor.png",
-        imagenModal01:"../Img/bebeColor.png",
-        imagenModal02:"../Img/maletaColor.png"
+        imagen: "Img/abuelaColor.png",
+        imagenModal01:"Img/bebeColor.png",
+        imagenModal02:"Img/maletaColor.png"
     }, 
     {id: 5, nombre: "Dolores Montoya",
         motto: "Dolores Montoya", 
         testimonio: "LoooremLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        imagen: "../Img/abuelaColor.png",
-        imagenModal01:"../Img/bebeColor.png",
-        imagenModal02:"../Img/maletaColor.png"
+        imagen: "Img/abuelaColor.png",
+        imagenModal01:"Img/bebeColor.png",
+        imagenModal02:"Img/maletaColor.png"
     },
     {id: 6, nombre: "Carmen Valencia",
         motto: "Carmen Valencia", 
         testimonio: "LoooremLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        imagen: "../Img/abuelaColor.png",
-        imagenModal01:"../Img/bebeColor.png",
-        imagenModal02:"../Img/maletaColor.png"
+        imagen: "Img/abuelaColor.png",
+        imagenModal01:"Img/bebeColor.png",
+        imagenModal02:"Img/maletaColor.png"
     },
     {id: 7, nombre: "Tereza Suárez",
         motto: "Tereza Suárez", 
         testimonio: "LoooremLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        imagen: "../Img/abuelaColor.png",
-        imagenModal01:"../Img/bebeColor.png",
-        imagenModal02:"../Img/maletaColor.png"
+        imagen: "Img/abuelaColor.png",
+        imagenModal01:"Img/bebeColor.png",
+        imagenModal02:"Img/maletaColor.png"
     },
     {id: 8, nombre: "Margarita Quintero",
         motto: "Margarita Quintero", 
         testimonio: "LoooremLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        imagen: "../Img/abuelaColor.png",
-        imagenModal01:"../Img/bebeColor.png",
-        imagenModal02:"../Img/maletaColor.png"
+        imagen: "Img/abuelaColor.png",
+        imagenModal01:"Img/bebeColor.png",
+        imagenModal02:"Img/maletaColor.png"
     },
     {id: 9, nombre: "Beatris Ríos",
         motto: "Beatris Ríos", 
         testimonio: "LoooremLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        imagen: "../Img/abuelaColor.png",
-        imagenModal01:"../Img/bebeColor.png",
-        imagenModal02:"../Img/maletaColor.png"
+        imagen: "Img/abuelaColor.png",
+        imagenModal01:"Img/bebeColor.png",
+        imagenModal02:"Img/maletaColor.png"
     },
     {id: 10, nombre: "Juliana Jimenez",
         motto: "Juliana Jimenez", 
         testimonio: "LoooremLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        imagen: "../Img/abuelaColor.png",
-        imagenModal01:"../Img/bebeColor.png",
-        imagenModal02:"../Img/maletaColor.png"
+        imagen: "Img/abuelaColor.png",
+        imagenModal01:"Img/bebeColor.png",
+        imagenModal02:"Img/maletaColor.png"
     },
     {id: 11, nombre: "Fabiola Morales",
         motto: "Fabiola Morales", 
         testimonio: "LoooremLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        imagen: "../Img/abuelaColor.png",
-        imagenModal01:"../Img/bebeColor.png",
-        imagenModal02:"../Img/maletaColor.png"
+        imagen: "Img/abuelaColor.png",
+        imagenModal01:"Img/bebeColor.png",
+        imagenModal02:"Img/maletaColor.png"
     },
     {id: 12, nombre: "Antonia Cardenas",
         motto: "Antonia Cardenas", 
         testimonio: "LoooremLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        imagen: "../Img/abuelaColor.png",
-        imagenModal01:"../Img/bebeColor.png",
-        imagenModal02:"../Img/maletaColor.png"
+        imagen: "Img/abuelaColor.png",
+        imagenModal01:"Img/bebeColor.png",
+        imagenModal02:"Img/maletaColor.png"
     },
     {id: 13, nombre: "Gloria Restrepo",
         motto: "Gloria Restrepo", 
         testimonio: "LoooremLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        imagen: "../Img/abuelaColor.png",
-        imagenModal01:"../Img/bebeColor.png",
-        imagenModal02:"../Img/maletaColor.png"
+        imagen: "Img/abuelaColor.png",
+        imagenModal01:"Img/bebeColor.png",
+        imagenModal02:"Img/maletaColor.png"
     },
     {id: 14, nombre: "Elvira Peña",
         motto: "Elvira Peña", 
         testimonio: "LoooremLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        imagen: "../Img/abuelaColor.png",
-        imagenModal01:"../Img/bebeColor.png",
-        imagenModal02:"../Img/maletaColor.png"
+        imagen: "Img/abuelaColor.png",
+        imagenModal01:"Img/bebeColor.png",
+        imagenModal02:"Img/maletaColor.png"
     },
     {id: 15, nombre: "Eugenia Ortiz",
         motto: "Eugenia Ortiz", 
         testimonio: "LoooremLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        imagen: "../Img/abuelaColor.png",
-        imagenModal01:"../Img/bebeColor.png",
-        imagenModal02:"../Img/maletaColor.png"
+        imagen: "Img/abuelaColor.png",
+        imagenModal01:"Img/bebeColor.png",
+        imagenModal02:"Img/maletaColor.png"
     },
     {id: 16, nombre: "Silvia Arango",
         motto: "Silvia Arango", 
         testimonio: "LoooremLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        imagen: "../Img/abuelaColor.png",
-        imagenModal01:"../Img/bebeColor.png",
-        imagenModal02:"../Img/maletaColor.png"
+        imagen: "Img/abuelaColor.png",
+        imagenModal01:"Img/bebeColor.png",
+        imagenModal02:"Img/maletaColor.png"
     },
     {id: 17, nombre: "Amanda Castro",
         motto: "Amanda Castro", 
         testimonio: "LoooremLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        imagen: "../Img/abuelaColor.png",
-        imagenModal01:"../Img/bebeColor.png",
-        imagenModal02:"../Img/maletaColor.png"
+        imagen: "Img/abuelaColor.png",
+        imagenModal01:"Img/bebeColor.png",
+        imagenModal02:"Img/maletaColor.png"
     },
     {id: 18, nombre: "Ofelia Vargas",
         motto: "Ofelia Vargas", 
         testimonio: "LoooremLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        imagen: "../Img/abuelaColor.png",
-        imagenModal01:"../Img/bebeColor.png",
-        imagenModal02:"../Img/maletaColor.png"
+        imagen: "Img/abuelaColor.png",
+        imagenModal01:"Img/bebeColor.png",
+        imagenModal02:"Img/maletaColor.png"
     },
     {id: 19, nombre: "Marina Lozano",
         motto: "Marina Lozano", 
         testimonio: "LoooremLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        imagen: "../Img/abuelaColor.png",
-        imagenModal01:"../Img/bebeColor.png",
-        imagenModal02:"../Img/maletaColor.png"
+        imagen: "Img/abuelaColor.png",
+        imagenModal01:"Img/bebeColor.png",
+        imagenModal02:"Img/maletaColor.png"
     },
     {id: 20, nombre: "Felicita Sierra",
         motto: "Felicita Sierra", 
         testimonio: "LoooremLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        imagen: "../Img/abuelaColor.png",
-        imagenModal01:"../Img/bebeColor.png",
-        imagenModal02:"../Img/maletaColor.png"
+        imagen: "Img/abuelaColor.png",
+        imagenModal01:"Img/bebeColor.png",
+        imagenModal02:"Img/maletaColor.png"
     },       
     
   ];
@@ -163,7 +163,7 @@ const testimonios = [
       if (index === 7) {
         grid.innerHTML += `
           <div class="col-12 col-md-6 decorativa">
-            <img src="../Img/maletaColor.png" alt="Elemento decorativo"  class="img-fluid imgGrande mb-2">
+            <img src="Img/maletaColor.png" alt="Elemento decorativo"  class="img-fluid imgGrande mb-2">
           </div>
         `;
       }
@@ -172,7 +172,7 @@ const testimonios = [
       if (index === 17) {
         grid.innerHTML += `
           <div class="col-12 col-md-6 order-md-last decorativa ">
-            <img src="../Img/bebeColor.png" alt="Elemento decorativo" class=" img-fluid imgGrande mb-2">
+            <img src="Img/bebeColor.png" alt="Elemento decorativo" class=" img-fluid imgGrande mb-2">
             
           </div>
         `;
