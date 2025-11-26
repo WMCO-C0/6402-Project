@@ -2,7 +2,7 @@ var check = document.querySelector('.check');
 
 // Sólo registrar el listener en las páginas relacionadas con el formulario
 if (check && (window.location.pathname.endsWith('formulario.html') || window.location.pathname.endsWith('forms.html'))) {
-    check.addEventListener('click', idioma);
+    check.addEventListener('change', idioma);
 }
 
 function idioma(){

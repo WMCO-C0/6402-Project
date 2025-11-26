@@ -1,5 +1,11 @@
-var check= document.querySelector('.check');
-check.addEventListener('click',idioma);
+// Only register handler on creditos/About pages
+var pathMatch = window.location.pathname.match(/\/(creditos|About|creditos2)(?:\.html)?$/i);
+if(pathMatch){
+    var check = document.querySelector('.check');
+    if(check){
+        check.addEventListener('change', idioma);
+    }
+}
 
 function idioma(){
     let id=check.checked;
@@ -8,5 +14,4 @@ function idioma(){
     }else{
         location.href="creditos.html";
     }
-    
 }
